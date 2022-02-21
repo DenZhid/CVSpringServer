@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/assets/java_icon.png" th:href="@{/assets/java_icon.png}" rel="shortcut icon">
+    <link href="../static/styles/cv-page-style.css" th:href="@{/styles/cv-page-style.css}" rel="stylesheet"/>
+    <!--<link href="../static/styles/" th:href="@{scripts/}" rel="script">-->
+    <title>Жидков Денис Олегович</title>
+</head>
+<body class="light-theme">
+<div class="header">
+    <img class="header__photo"
+         src="../static/assets/avatar.jpg"
+         th:src="@{/assets/avatar.jpg}"
+         alt="cv_avatar"/>
+    <div class="header__name">
+        <b>Жидков Денис Олегович</b> <br>
+        Java Backend
+    </div>
+    <div class="header__links-box">
+        <div class="link">
+            <img class="link__gh-img"
+                 src="../static/assets/gh_icon.png"
+                 th:src="@{/assets/gh_icon.png}"
+                 alt="github_icon"/>
+            <a class="link__gh" href="https://github.com/DenZhid">GitHub</a>
+        </div>
+        <div class="link">
+            <img class="link__gmail-img"
+                 src="../static/assets/gm_icon.png"
+                 th:src="@{/assets/gm_icon.png}"
+                 alt="gmail_icon"/>
+            <a class="link__gmail" href="https://denis.zhidkov01@gmail.com">Gmail</a>
+        </div>
+        <div class="link">
+            <img class="link__tg-img"
+                 src="../static/assets/tg_icon.png"
+                 th:src="@{/assets/tg_img.png}"
+                 alt="telegram_icon"/>
+            <a class="link__tg" href="https://t.me/DenZhid">Telegram</a>
+        </div>
+    </div>
+    <div class="header__download-cv-button">
+        <div class="header__download-cv-button_text">As PDF</div>
+    </div>
+</div>
+<div class="description">
+    <div class="info-box">
+        <div class="info-box-header">
+            <div class="info-box-header__text"> Навыки и умения</div>
+        </div>
+        <div class="info-box__description">
+            <ul class="info-box__description__text">
+                <li>Java (Core, Collections, Concurrency)</li>
+                <li>Algorithms & Data Structures</li>
+                <li>Git</li>
+                <li>Ознакомлен c: Maven, Gradle, JUnit, JavaScript, HTML/CSS</li>
+                <li>В данный момент изучаю: SQL (PostgreSQL), Spring (Core, MVC, Boot)</li>
+                <li>Английский - B1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="info-box">
+        <div class="info-box-header">
+            <div class="info-box-header__text">Опыт работы/Проекты</div>
+        </div>
+        <div class="info-box__description">
+            <ul class="info-box__description__text">
+                Студенческие проекты:
+                <li>Мобильное приложение “Sportable”: <br>
+                    Описание: Мобильное приложение, разработанное с командой в рамках университетского курса,
+                    для занятий спортом.
+                    Рассчитывает траекторию пробежки, ходьбы или велосипедного заезда
+                    в зависимости от введённых данных. <br>
+                    Стек технологий:
+                    <ul>
+                        <li>Java</li>
+                        <li>Android SDK</li>
+                        <li>Room</li>
+                    </ul>
+                    GitHub: <a href="https://github.com/DenZhid/Sportable">
+                        https://github.com/DenZhid/Sportable
+                    </a>
+                </li>
+                <li>
+                    Игра "Змейка": <br>
+                    Описание: Реализация всеми знакомой игры "Змейка" с небольшими изменениями в виде добавления
+                    вражеской змейки, а также различными уровнями скорости, от которых зависит скорость анимации. <br>
+                    Стек технологий:
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                        <li>JUnit</li>
+                        <li>Mockito</li>
+                    </ul>
+                    GitHub: <a href="https://github.com/DenZhid/SnakeGame">
+                    https://github.com/DenZhid/SnakeGame
+                </a>
+                </li>
+                <li>
+                    Алгоритм "Автосапёр": <br>
+                    Описание: Алгоритм, реализующий решение различных вариаций игры "Сапёр". <br>
+                    Стек технологий:
+                    <ul>
+                        <li>Java</li>
+                        <li>JUnit</li>
+                        <li>Mockito</li>
+                    </ul>
+                    GitHub: <a href="https://github.com/DenZhid/AutoMinesweeper">
+                    https://github.com/DenZhid/AutoMinesweeper
+                </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="info-box">
+        <div class="info-box-header">
+            <div class="info-box-header__text">Образование</div>
+        </div>
+        <div class="info-box__description">
+            <ul class="info-box__description__text">
+                Санкт-Петербургский политехнический университет Петра Великого
+                <li>Институт: Компьютерные науки и технологии</li>
+                <li>Направление: Информатика и вычислительная техника</li>
+                <li>Курс: 3</li>
+                <li>Годы обучения: 2019 - настоящее время</li>
+
+                <br>Технополис VK при СПБПУ
+                <li>Направление: Java - разработчик высоконагруженных приложений</li>
+                <li>Семестр: 2</li>
+                <li>Годы обучения: 2021 - настоящее время</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
